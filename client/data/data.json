@@ -1,0 +1,11 @@
+{
+  "posts": [
+    {
+      "id": "b68169ae-b3f2-489c-9f40-2357fb1ef01d",
+      "name": "Gooday",
+      "priceperbox": "1000",
+      "priceperpacket": "280",
+      "priceperdozen": "560"
+    }
+  ]
+}
