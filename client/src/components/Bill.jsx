@@ -1,6 +1,23 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
+import axios from '../api/axios'
+import swal from 'sweetalert'
+import BillItems from "./BillItems";
 const Bill = () => {
+    const [getItems, setgetItems] = useState([])
+
+    useEffect(() => {
+      const fetchPosts = async () => {
+        try {
+            const response = await axios.get('/posts')
+            console.log(response.data)
+            setgetItems(response.data)
+        } catch (err) {
+            swal(`Error: ${err.message}`)
+        }
+      }
+      fetchPosts();
+    }, [])
+    
     return(
         <section>
             <div>
@@ -24,26 +41,16 @@ const Bill = () => {
                                 <div>
                                     Price:
                                 </div>
+                                <div>
+                                    Options
+                                </div>
                             </div>
                             {/* contextend */}
 
                             {/* itemstarthere */}
-                            <div className="datainfohere d1">
-                                <div>GoodDay</div>
-                                <div>
-                                    1
-                                </div>
-                                <div>
-                                <select name="" id="" className="px-4 py-2">
-                                        <option value="Per Box">Per Box</option>
-                                        <option value="Per Packet">Per Packet</option>
-                                        <option value="Per Dozen">Per Dozen</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    9000
-                                </div>
-                            </div>
+                         {getItems.map((items)=>(
+                            <div key={items.id}><BillItems items={items} /></div>
+                         ))}
                             {/* itemendhere */}
                         </div>
                     </section>

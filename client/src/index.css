@@ -76,10 +76,16 @@ input[type=number]{
 
 .databillforgd .datainfohere{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
     border: 1px solid #ccc;
     height: 60px;
     color: #273339;
     font-weight: 600;
     padding: 14px;
+    gap: 100px;
+}
+
+input[type=number]{
+    width: 60px;
+    padding-left: 9px;
 }
