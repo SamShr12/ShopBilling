@@ -6,6 +6,13 @@
       "priceperbox": "1000",
       "priceperpacket": "280",
       "priceperdozen": "560"
+    },
+    {
+      "id": "a4d79ecb-7245-45b0-b73e-260efe2e1d74",
+      "name": "Lays",
+      "priceperbox": "12000",
+      "priceperpacket": "10",
+      "priceperdozen": "120"
     }
   ]
 }

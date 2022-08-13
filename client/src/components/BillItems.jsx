@@ -47,13 +47,8 @@ const BillItems = ({items}) => {
                                         <button className='p-1 px-2 bg-[#ed1c1c] text-white font-semibold'>Remove</button>
                                 </div>
                             </div>
-                            <div className='mt-10 text-right'>
-                                <h2 className='text-xl font-semibold text-[#273339]'>Total: 9000</h2>
-                            </div>
-                            <div className=' mt-2 text-right'>
-                                <button className='bg-[#27baef] px-2 py-4 font-semibold text-white'>Checkout</button>
-                                
-                            </div>
+                        
+                          
     </div>
   )
 }

@@ -23,9 +23,10 @@ const Bill = () => {
             <div>
                 <div className="w-10/12 m-auto mt-20">
                     <h2 className="text-3xl font-semibold leading-6">Billing</h2>
-                    <div className="my-5">
+                    <div className="my-5 flex">
                         <input type="text" name="search" id="" placeholder="Search Items..." />
                     </div>
+            
 
                     <section className="datasdasfg">
                         <div className="databillforgd">

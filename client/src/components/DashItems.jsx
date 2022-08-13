@@ -35,24 +35,7 @@ const DashItems = ({item}) => {
 
     return(
         <section>
-            <div className="dash-forgd border border-solid h-20">
-                    <div className="w-96 ml-16 mt-5">
-                        Name
-                    </div>
-                    <div className="mt-5">
-                         Per Box
-                    </div>
-                    <div className="mt-5">
-                         Per Packet
-                    </div>
-                    <div className="mt-5">
-                         Per Dozen
-                    </div>
-                    
-                    <div className="ml-8 mt-5 w-60">
-                        Options
-                    </div>
-                </div>
+        
           {/* itesmstarthere */}
                 <div className="dash-forgd border border-solid h-20">
                     <div className="w-96 ml-16 mt-5">
